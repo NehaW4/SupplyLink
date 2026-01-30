@@ -1,6 +1,6 @@
 package com.edutech.progressive.entity;
 
-public class Warehouse {
+public class Warehouse implements Comparable<Warehouse> {
 
     private int warehouseId;
     private int supplierId;
@@ -57,6 +57,12 @@ public class Warehouse {
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
+    }
+
+    @Override
+    public int compareTo(Warehouse o) {
+       
+        return Integer.compare(o.capacity, this.capacity);
     }
 
     
