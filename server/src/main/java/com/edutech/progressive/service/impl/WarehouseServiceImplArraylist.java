@@ -57,9 +57,9 @@ public class WarehouseServiceImplArraylist implements WarehouseService {
         return null;
     }
 
-    @Override
-    public List<Warehouse> getWarehousesSortedByName() throws SQLException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getWarehousesSortedByName'");
-    }
+    // @Override
+    // public List<Warehouse> getWarehousesSortedByName() throws SQLException {
+    //     // TODO Auto-generated method stub
+    //     throw new UnsupportedOperationException("Unimplemented method 'getWarehousesSortedByName'");
+    // }
 }
