@@ -1,19 +1,28 @@
+
 package com.edutech.progressive.entity;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "product")
 public class Product {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int productId;
+
     private int warehouseId;
     private String productName;
     private String productDescription;
     private int quantity;
-    private long price;
-    
+    private Long price;
+
     public Product() {
     }
 
-    public Product(int productId, int warehouseId, String productName, String productDescription, int quantity,
-            long price) {
+    public Product(int productId, int warehouseId, String productName,
+                   String productDescription, int quantity, Long price) {
         this.productId = productId;
         this.warehouseId = warehouseId;
         this.productName = productName;
@@ -62,14 +71,11 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public long getPrice() {
+    public Long getPrice() {
         return price;
     }
 
-    public void setPrice(long price) {
+    public void setPrice(Long price) {
         this.price = price;
     }
-
-    
-
 }
