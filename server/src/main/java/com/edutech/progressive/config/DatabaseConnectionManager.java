@@ -40,3 +40,9 @@ public class DatabaseConnectionManager {
     }
 }
 
+
+//create table supplier(supplier_id int auto_increment primary key, supplier_name varchar(100)not null, email varchar(100) not null, username varchar(255) not null, password varchar(255) not null, phone varchar(20), address varchar(255), role varchar(50));
+
+//create table warehouse(warehouse_id int primary key auto_increment, supplier_id int not null, warehouse_name varchar(100) not null, location varchar(255)not null, capacity int not null);
+
+//create table product(product_id int primary key auto_increment, warehouse_id int not null, product_name varchar(100)not null, product_description text, quantity int not null, price decimal(10, 2)not null);
