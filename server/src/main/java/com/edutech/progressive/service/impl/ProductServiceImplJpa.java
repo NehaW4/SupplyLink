@@ -20,6 +20,7 @@ public class ProductServiceImplJpa implements ProductService {
     public List<Product> getAllProducts() {
         return productRepository.findAll();
     }
+    
 
     @Override
     public Product getProductById(int productId) {
